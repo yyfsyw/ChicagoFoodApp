@@ -2,5 +2,4 @@
 
 
 #### Team member:
----
-1. Zhihao Zhang
+* Zhihao Zhang
