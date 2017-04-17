@@ -2,5 +2,7 @@
 
 
 #### Team member:
+* Chaewon Yun
+* Michael Tompkins
+* Yunfei Yang
 * Zhihao Zhang
-* just trying github
