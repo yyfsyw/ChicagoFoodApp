@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		933CAFA11EAC1147001F6962 /* Facility+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CAF9D1EAC1147001F6962 /* Facility+CoreDataClass.swift */; };
+		933CAFA21EAC1147001F6962 /* Facility+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CAF9E1EAC1147001F6962 /* Facility+CoreDataProperties.swift */; };
+		933CAFA31EAC1147001F6962 /* Inspection+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CAF9F1EAC1147001F6962 /* Inspection+CoreDataClass.swift */; };
+		933CAFA41EAC1147001F6962 /* Inspection+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CAFA01EAC1147001F6962 /* Inspection+CoreDataProperties.swift */; };
 		B7657F461E9C279D003D3966 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7657F451E9C279D003D3966 /* AppDelegate.swift */; };
 		B7657F481E9C279D003D3966 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7657F471E9C279D003D3966 /* ViewController.swift */; };
 		B7657F4B1E9C279D003D3966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7657F491E9C279D003D3966 /* Main.storyboard */; };
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		933CAF9D1EAC1147001F6962 /* Facility+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Facility+CoreDataClass.swift"; sourceTree = "<group>"; };
+		933CAF9E1EAC1147001F6962 /* Facility+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Facility+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		933CAF9F1EAC1147001F6962 /* Inspection+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Inspection+CoreDataClass.swift"; sourceTree = "<group>"; };
+		933CAFA01EAC1147001F6962 /* Inspection+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Inspection+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B7657F421E9C279D003D3966 /* ChicagoFoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChicagoFoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7657F451E9C279D003D3966 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7657F471E9C279D003D3966 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +98,10 @@
 		933CAF9C1EABFFAE001F6962 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				933CAF9D1EAC1147001F6962 /* Facility+CoreDataClass.swift */,
+				933CAF9E1EAC1147001F6962 /* Facility+CoreDataProperties.swift */,
+				933CAF9F1EAC1147001F6962 /* Inspection+CoreDataClass.swift */,
+				933CAFA01EAC1147001F6962 /* Inspection+CoreDataProperties.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -281,7 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				933CAFA11EAC1147001F6962 /* Facility+CoreDataClass.swift in Sources */,
 				B7657F481E9C279D003D3966 /* ViewController.swift in Sources */,
+				933CAFA41EAC1147001F6962 /* Inspection+CoreDataProperties.swift in Sources */,
+				933CAFA21EAC1147001F6962 /* Facility+CoreDataProperties.swift in Sources */,
+				933CAFA31EAC1147001F6962 /* Inspection+CoreDataClass.swift in Sources */,
 				B7657F461E9C279D003D3966 /* AppDelegate.swift in Sources */,
 				B7657F4E1E9C279D003D3966 /* ChicagoFoodApp.xcdatamodeld in Sources */,
 			);
