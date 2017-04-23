@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB3BDBB81EAD384A007F277A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB3BDBB71EAD384A007F277A /* Main.storyboard */; };
 		B7657F461E9C279D003D3966 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7657F451E9C279D003D3966 /* AppDelegate.swift */; };
 		B7657F481E9C279D003D3966 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7657F471E9C279D003D3966 /* ViewController.swift */; };
-		B7657F4B1E9C279D003D3966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7657F491E9C279D003D3966 /* Main.storyboard */; };
 		B7657F4E1E9C279D003D3966 /* ChicagoFoodApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B7657F4C1E9C279D003D3966 /* ChicagoFoodApp.xcdatamodeld */; };
 		B7657F501E9C279D003D3966 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7657F4F1E9C279D003D3966 /* Assets.xcassets */; };
 		B7657F531E9C279D003D3966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7657F511E9C279D003D3966 /* LaunchScreen.storyboard */; };
@@ -35,10 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB3BDBB71EAD384A007F277A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B7657F421E9C279D003D3966 /* ChicagoFoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChicagoFoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7657F451E9C279D003D3966 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7657F471E9C279D003D3966 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B7657F4A1E9C279D003D3966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7657F4D1E9C279D003D3966 /* ChicagoFoodApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChicagoFoodApp.xcdatamodel; sourceTree = "<group>"; };
 		B7657F4F1E9C279D003D3966 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7657F521E9C279D003D3966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 			children = (
 				B7657F451E9C279D003D3966 /* AppDelegate.swift */,
 				B7657F471E9C279D003D3966 /* ViewController.swift */,
-				B7657F491E9C279D003D3966 /* Main.storyboard */,
+				AB3BDBB71EAD384A007F277A /* Main.storyboard */,
 				B7657F4F1E9C279D003D3966 /* Assets.xcassets */,
 				B7657F511E9C279D003D3966 /* LaunchScreen.storyboard */,
 				B7657F541E9C279D003D3966 /* Info.plist */,
@@ -240,7 +240,7 @@
 			files = (
 				B7657F531E9C279D003D3966 /* LaunchScreen.storyboard in Resources */,
 				B7657F501E9C279D003D3966 /* Assets.xcassets in Resources */,
-				B7657F4B1E9C279D003D3966 /* Main.storyboard in Resources */,
+				AB3BDBB81EAD384A007F277A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,14 +303,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B7657F491E9C279D003D3966 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B7657F4A1E9C279D003D3966 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B7657F511E9C279D003D3966 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -520,6 +512,7 @@
 				B7657F6F1E9C279E003D3966 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B7657F701E9C279E003D3966 /* Build configuration list for PBXNativeTarget "ChicagoFoodAppTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +521,7 @@
 				B7657F721E9C279E003D3966 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B7657F731E9C279E003D3966 /* Build configuration list for PBXNativeTarget "ChicagoFoodAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +530,7 @@
 				B7657F751E9C279E003D3966 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
