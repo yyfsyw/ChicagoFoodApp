@@ -9,10 +9,26 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var TestingLabel: UILabel!
 
+    
+    var facilities: [Facility] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        Model.sharedInstance.loadData()
+        facilities = Model.sharedInstance.fetchFacilities()
+        
+        print(facilities.count)
+        
+        print("-------------------")
+        for facility in facilities {
+            print(facility.address ?? "")
+            print(facility.longitude )
+            print(facility.latitude )
+        }
+        
+        TestingLabel.text = facilities[0].address
+       
     }
 
     override func didReceiveMemoryWarning() {
