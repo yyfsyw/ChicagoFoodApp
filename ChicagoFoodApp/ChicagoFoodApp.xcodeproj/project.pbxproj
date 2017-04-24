@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9333868E1EAD549500FF4B18 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 9333868D1EAD549500FF4B18 /* test.json */; };
+		933386901EAD560800FF4B18 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333868F1EAD560800FF4B18 /* Model.swift */; };
 		933CAFA11EAC1147001F6962 /* Facility+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CAF9D1EAC1147001F6962 /* Facility+CoreDataClass.swift */; };
 		933CAFA21EAC1147001F6962 /* Facility+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CAF9E1EAC1147001F6962 /* Facility+CoreDataProperties.swift */; };
 		933CAFA31EAC1147001F6962 /* Inspection+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CAF9F1EAC1147001F6962 /* Inspection+CoreDataClass.swift */; };
 		933CAFA41EAC1147001F6962 /* Inspection+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CAFA01EAC1147001F6962 /* Inspection+CoreDataProperties.swift */; };
+		935DD59F1EAD612D0077A4C4 /* FoodFacility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935DD59E1EAD612D0077A4C4 /* FoodFacility.swift */; };
+		935DD5A11EAD61360077A4C4 /* FoodInspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935DD5A01EAD61360077A4C4 /* FoodInspection.swift */; };
+		935DD5A41EAD61400077A4C4 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935DD5A21EAD61400077A4C4 /* JSONLoader.swift */; };
+		935DD5A51EAD61400077A4C4 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935DD5A31EAD61400077A4C4 /* JSONParser.swift */; };
 		B7657F461E9C279D003D3966 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7657F451E9C279D003D3966 /* AppDelegate.swift */; };
 		B7657F481E9C279D003D3966 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7657F471E9C279D003D3966 /* ViewController.swift */; };
 		B7657F4B1E9C279D003D3966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7657F491E9C279D003D3966 /* Main.storyboard */; };
@@ -39,10 +45,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9333868D1EAD549500FF4B18 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		9333868F1EAD560800FF4B18 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		933CAF9D1EAC1147001F6962 /* Facility+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Facility+CoreDataClass.swift"; sourceTree = "<group>"; };
 		933CAF9E1EAC1147001F6962 /* Facility+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Facility+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		933CAF9F1EAC1147001F6962 /* Inspection+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Inspection+CoreDataClass.swift"; sourceTree = "<group>"; };
 		933CAFA01EAC1147001F6962 /* Inspection+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Inspection+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		935DD59E1EAD612D0077A4C4 /* FoodFacility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodFacility.swift; sourceTree = "<group>"; };
+		935DD5A01EAD61360077A4C4 /* FoodInspection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodInspection.swift; sourceTree = "<group>"; };
+		935DD5A21EAD61400077A4C4 /* JSONLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
+		935DD5A31EAD61400077A4C4 /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 		B7657F421E9C279D003D3966 /* ChicagoFoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChicagoFoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7657F451E9C279D003D3966 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7657F471E9C279D003D3966 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +96,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		933386841EAD540400FF4B18 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				935DD59E1EAD612D0077A4C4 /* FoodFacility.swift */,
+				935DD5A01EAD61360077A4C4 /* FoodInspection.swift */,
+				935DD5A21EAD61400077A4C4 /* JSONLoader.swift */,
+				935DD5A31EAD61400077A4C4 /* JSONParser.swift */,
+				9333868D1EAD549500FF4B18 /* test.json */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
 		933CAF9B1EABFF37001F6962 /* Miscellaneous */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +126,8 @@
 				933CAF9E1EAC1147001F6962 /* Facility+CoreDataProperties.swift */,
 				933CAF9F1EAC1147001F6962 /* Inspection+CoreDataClass.swift */,
 				933CAFA01EAC1147001F6962 /* Inspection+CoreDataProperties.swift */,
+				933386841EAD540400FF4B18 /* JSON */,
+				9333868F1EAD560800FF4B18 /* Model.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -267,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7657F531E9C279D003D3966 /* LaunchScreen.storyboard in Resources */,
+				9333868E1EAD549500FF4B18 /* test.json in Resources */,
 				B7657F501E9C279D003D3966 /* Assets.xcassets in Resources */,
 				B7657F4B1E9C279D003D3966 /* Main.storyboard in Resources */,
 			);
@@ -294,7 +321,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				933CAFA11EAC1147001F6962 /* Facility+CoreDataClass.swift in Sources */,
+				935DD5A41EAD61400077A4C4 /* JSONLoader.swift in Sources */,
+				935DD5A51EAD61400077A4C4 /* JSONParser.swift in Sources */,
+				935DD5A11EAD61360077A4C4 /* FoodInspection.swift in Sources */,
+				935DD59F1EAD612D0077A4C4 /* FoodFacility.swift in Sources */,
 				B7657F481E9C279D003D3966 /* ViewController.swift in Sources */,
+				933386901EAD560800FF4B18 /* Model.swift in Sources */,
 				933CAFA41EAC1147001F6962 /* Inspection+CoreDataProperties.swift in Sources */,
 				933CAFA21EAC1147001F6962 /* Facility+CoreDataProperties.swift in Sources */,
 				933CAFA31EAC1147001F6962 /* Inspection+CoreDataClass.swift in Sources */,

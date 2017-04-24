@@ -2,7 +2,7 @@
 //  Inspection+CoreDataProperties.swift
 //  ChicagoFoodApp
 //
-//  Created by zhang  zhihao on 4/22/17.
+//  Created by zhang  zhihao on 4/23/17.
 //  Copyright © 2017 YUNFEI YANG. All rights reserved.
 //
 
