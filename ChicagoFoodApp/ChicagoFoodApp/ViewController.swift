@@ -10,10 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    var facilities: [Facility] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         Model.sharedInstance.loadData()
-        // Do any additional setup after loading the view, typically from a nib.
+        facilities = Model.sharedInstance.fetchCategories()
+       
     }
 
     override func didReceiveMemoryWarning() {

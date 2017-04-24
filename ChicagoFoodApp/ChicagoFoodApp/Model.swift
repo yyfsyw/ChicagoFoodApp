@@ -27,31 +27,38 @@ class Model {
     func loadData() {
         let coreDataLoadedKey = "hasLoadedCoreData"
         
-        
-        
         guard !UserDefaults.standard.bool(forKey: coreDataLoadedKey) else { return }
         
         
         
-        let newsCategories = JSONLoader.load(fileName: "test")
+        let chicagoRests = JSONLoader.load(fileName: "test")
         
-        //        for newsCategory in newsCategories {
-        //            if let category = Category(title: newsCategory.title) {
-        //                for newsArticle in newsCategory.articles {
-        //                    if let article = Article(title: newsArticle.title, date: newsArticle.date) {
-        //                        category.addToArticles(article)
-        //                    }
-        //                }
-        //            }
-        //        }
-        //
-        //        do {
-        //            try self.managedContext?.save()
-        //
-        //            UserDefaults.standard.set(true, forKey: coreDataLoadedKey)
-        //        } catch {
-        //            return
-        //        }
+//                for chicagoRest in chicagoRests {
+//                    if let category = Category(title: newsCategory.title) {
+//                        for inspection in chicagoRest.inspections {
+//                            if let article = Article(title: newsArticle.title, date: newsArticle.date) {
+//                                category.addToArticles(article)
+//                            }
+//                        }
+//                    }
+//                }
+//        
+//                do {
+//                    try self.managedContext?.save()
+//        
+//                    UserDefaults.standard.set(true, forKey: coreDataLoadedKey)
+//                } catch {
+//                    return
+//                }
+    }
+    
+    func fetchCategories() -> [Facility] {
+        do {
+            let array = try managedContext?.fetch(Facility.fetchRequest()) ?? []
+            return array
+        } catch {
+            return []
+        }
     }
     
     
