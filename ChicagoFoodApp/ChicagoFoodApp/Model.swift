@@ -28,31 +28,35 @@ class Model {
         let coreDataLoadedKey = "hasLoadedCoreData"
         
         guard !UserDefaults.standard.bool(forKey: coreDataLoadedKey) else { return }
-        
-        
-        
+
         let chicagoRests = JSONLoader.load(fileName: "test")
         
-//                for chicagoRest in chicagoRests {
-//                    if let category = Category(title: newsCategory.title) {
-//                        for inspection in chicagoRest.inspections {
-//                            if let article = Article(title: newsArticle.title, date: newsArticle.date) {
-//                                category.addToArticles(article)
-//                            }
-//                        }
-//                    }
-//                }
-//        
-//                do {
-//                    try self.managedContext?.save()
-//        
-//                    UserDefaults.standard.set(true, forKey: coreDataLoadedKey)
-//                } catch {
-//                    return
-//                }
+        
+        print(chicagoRests.count)
+        
+        
+        for chicagoRest in chicagoRests {
+            
+            if let facility = Facility(address: chicagoRest.address, name: chicagoRest.name, type: chicagoRest.type, license: chicagoRest.license, risk: chicagoRest.risk, latitude: chicagoRest.latitude, longitude: chicagoRest.longitude) {
+                for inspection in chicagoRest.inspections {
+                            if let eachInspection = Inspection(type: inspection.type, result: inspection.result, violation: inspection.violation, id: inspection.id, date: inspection.date) {
+                                facility.addToInpsections(eachInspection)
+                                
+                            }
+                        }
+                    }
+                }
+        
+                do {
+                    try self.managedContext?.save()
+        
+                    UserDefaults.standard.set(true, forKey: coreDataLoadedKey)
+                } catch {
+                    return
+                }
     }
     
-    func fetchCategories() -> [Facility] {
+    func fetchFacilities() -> [Facility] {
         do {
             let array = try managedContext?.fetch(Facility.fetchRequest()) ?? []
             return array

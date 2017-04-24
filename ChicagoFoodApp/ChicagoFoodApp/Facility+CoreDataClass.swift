@@ -24,7 +24,7 @@ public class Facility: NSManagedObject {
         self.address = address
         self.name = name
         self.type = type
-        self.license = Int16(license)
+        self.license = Int32(license)
         self.risk = risk as NSDecimalNumber
         self.latitude = latitude
         self.longitude = longitude

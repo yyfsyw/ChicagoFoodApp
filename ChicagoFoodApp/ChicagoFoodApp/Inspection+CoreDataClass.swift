@@ -28,7 +28,7 @@ public class Inspection: NSManagedObject {
         self.type = type
         self.results = result
         self.violation = violation
-        self.id = Int16(id)
+        self.id = Int32(id)
         self.date = date as NSDate
         
     }

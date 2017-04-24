@@ -2,7 +2,7 @@
 //  Inspection+CoreDataProperties.swift
 //  ChicagoFoodApp
 //
-//  Created by zhang  zhihao on 4/23/17.
+//  Created by zhang  zhihao on 4/24/17.
 //  Copyright © 2017 YUNFEI YANG. All rights reserved.
 //
 
@@ -17,7 +17,7 @@ extension Inspection {
     }
 
     @NSManaged public var date: NSDate?
-    @NSManaged public var id: Int16
+    @NSManaged public var id: Int32
     @NSManaged public var results: String?
     @NSManaged public var type: String?
     @NSManaged public var violation: String?
