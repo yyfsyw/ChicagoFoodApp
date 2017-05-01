@@ -25,7 +25,7 @@ class LoginViewController: UIViewController {
         facilities = Model.sharedInstance.fetchFacilities()
         
         print(facilities.count)
-        
+        print("Hello World")
         print("-------------------")
         for facility in facilities {
             print(facility.address ?? "")
