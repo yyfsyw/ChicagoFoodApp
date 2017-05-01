@@ -10,6 +10,8 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    
+    var facilities: [Facility] = []
     @IBAction func moveToTabBar(_ sender: UIButton) {
         let storyboard = UIStoryboard(name:"Main", bundle: nil)
         let tabBarController = storyboard.instantiateViewController(withIdentifier: "TabBarController") as! UITabBarController
@@ -18,6 +20,18 @@ class LoginViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Model.sharedInstance.loadData()
+        facilities = Model.sharedInstance.fetchFacilities()
+        
+        print(facilities.count)
+        
+        print("-------------------")
+        for facility in facilities {
+            print(facility.address ?? "")
+            print(facility.longitude )
+            print(facility.latitude )
+        }
 
         // Do any additional setup after loading the view.
     }

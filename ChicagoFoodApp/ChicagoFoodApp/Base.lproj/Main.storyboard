@@ -23,8 +23,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYt-Xp-Wbb">
-                                <rect key="frame" x="156" y="318" width="64" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYt-Xp-Wbb">
+                                <rect key="frame" x="156" y="93" width="64" height="30"/>
                                 <state key="normal" title="Welcome"/>
                                 <connections>
                                     <action selector="moveToTabBar:" destination="RaF-1v-JMh" eventType="touchUpInside" id="CSJ-hg-Fa2"/>
