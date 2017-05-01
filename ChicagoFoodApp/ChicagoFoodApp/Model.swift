@@ -28,7 +28,7 @@ class Model {
         let coreDataLoadedKey = "hasLoadedCoreData"
         guard !UserDefaults.standard.bool(forKey: coreDataLoadedKey) else { return }
 
-        let chicagoRests = JSONLoader.load(fileName: "test")
+        let chicagoRests = JSONLoader.load(fileName: "data")
         print(chicagoRests.count)
         
         for chicagoRest in chicagoRests {
