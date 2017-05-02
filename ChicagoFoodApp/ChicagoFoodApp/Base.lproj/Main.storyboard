@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+<!--Login View Controller-->
         <scene sceneID="dXF-0T-Wda">
             <objects>
                 <viewController storyboardIdentifier="LoginVC" id="RaF-1v-JMh" customClass="LoginViewController" customModule="ChicagoFoodApp" customModuleProvider="target" sceneMemberID="viewController">
