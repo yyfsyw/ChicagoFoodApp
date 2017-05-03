@@ -26,6 +26,7 @@
 		B7657F531E9C279D003D3966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7657F511E9C279D003D3966 /* LaunchScreen.storyboard */; };
 		B7657F5E1E9C279E003D3966 /* ChicagoFoodAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7657F5D1E9C279E003D3966 /* ChicagoFoodAppTests.swift */; };
 		B7657F691E9C279E003D3966 /* ChicagoFoodAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7657F681E9C279E003D3966 /* ChicagoFoodAppUITests.swift */; };
+		D6D568331EBA5A6200C48FE2 /* MapUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D568321EBA5A6200C48FE2 /* MapUIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		B7657F641E9C279E003D3966 /* ChicagoFoodAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChicagoFoodAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7657F681E9C279E003D3966 /* ChicagoFoodAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChicagoFoodAppUITests.swift; sourceTree = "<group>"; };
 		B7657F6A1E9C279E003D3966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6D568321EBA5A6200C48FE2 /* MapUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapUIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				933CAF9B1EABFF37001F6962 /* Miscellaneous */,
 				B7657F471E9C279D003D3966 /* ViewController.swift */,
 				B72F6EEE1EB10EC30071989A /* LoginViewController.swift */,
+				D6D568321EBA5A6200C48FE2 /* MapUIViewController.swift */,
 				B7657F491E9C279D003D3966 /* Main.storyboard */,
 				B7657F4C1E9C279D003D3966 /* ChicagoFoodApp.xcdatamodeld */,
 			);
@@ -332,6 +335,7 @@
 				933386901EAD560800FF4B18 /* Model.swift in Sources */,
 				933CAFA41EAC1147001F6962 /* Inspection+CoreDataProperties.swift in Sources */,
 				933CAFA21EAC1147001F6962 /* Facility+CoreDataProperties.swift in Sources */,
+				D6D568331EBA5A6200C48FE2 /* MapUIViewController.swift in Sources */,
 				933CAFA31EAC1147001F6962 /* Inspection+CoreDataClass.swift in Sources */,
 				B7657F461E9C279D003D3966 /* AppDelegate.swift in Sources */,
 				B72F6EEF1EB10EC30071989A /* LoginViewController.swift in Sources */,
