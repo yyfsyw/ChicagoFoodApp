@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-<!--Login View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="dXF-0T-Wda">
             <objects>
                 <viewController storyboardIdentifier="LoginVC" id="RaF-1v-JMh" customClass="LoginViewController" customModule="ChicagoFoodApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -66,7 +66,7 @@
         <!--Your Favorite-->
         <scene sceneID="b5W-f9-q41">
             <objects>
-                <tableViewController id="Of2-be-tr2" customClass="favoriteTableViewController" customModule="ChicagoFoodApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Of2-be-tr2" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4JT-qV-Q2a">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -177,7 +177,7 @@
         <!--All-->
         <scene sceneID="rdE-s9-nWa">
             <objects>
-                <tableViewController id="z3i-Ej-BGc" customClass="reviewTableViewController" customModule="ChicagoFoodApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="z3i-Ej-BGc" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="LbY-dv-RS5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -307,7 +307,7 @@
         <!--Review-->
         <scene sceneID="LwI-xc-WeO">
             <objects>
-                <tableViewController id="jAl-Zf-eex" customClass="reviewTableViewController" customModule="ChicagoFoodApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="jAl-Zf-eex" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="tpo-uf-7e2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

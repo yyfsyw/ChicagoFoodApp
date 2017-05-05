@@ -32,7 +32,22 @@ class LoginViewController: UIViewController {
 //            print(facility.longitude )
 //            print(facility.latitude )
             print(facility.favorited)
+            facility.favorited = false
+            do {
+                try facility.managedObjectContext?.save()
+            } catch  {
+                let saveError = error as NSError
+                print(saveError)
+            }
+            
+            
         }
+          print("-------------------")
+        for facility in facilities{
+            print(facility.favorited)
+            
+        }
+        
 
         // Do any additional setup after loading the view.
     }
