@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-<!--Login View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="dXF-0T-Wda">
             <objects>
                 <viewController storyboardIdentifier="LoginVC" id="RaF-1v-JMh" customClass="LoginViewController" customModule="ChicagoFoodApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -271,7 +271,7 @@
         <!--Near me-->
         <scene sceneID="ePM-dw-0Xm">
             <objects>
-                <viewController id="psO-M9-trK" sceneMemberID="viewController">
+                <viewController id="psO-M9-trK" customClass="MapUIViewController" customModule="ChicagoFoodApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ulC-EP-ZEw"/>
                         <viewControllerLayoutGuide type="bottom" id="xg3-wB-yCq"/>
@@ -279,9 +279,23 @@
                     <view key="view" contentMode="scaleToFill" id="4EC-mE-1R7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cYR-Q0-VzE">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cYR-Q0-VzE" firstAttribute="leading" secondItem="4EC-mE-1R7" secondAttribute="leading" id="BLG-aV-nkq"/>
+                            <constraint firstItem="cYR-Q0-VzE" firstAttribute="top" secondItem="ulC-EP-ZEw" secondAttribute="bottom" id="aI3-Pw-i0D"/>
+                            <constraint firstItem="xg3-wB-yCq" firstAttribute="top" secondItem="cYR-Q0-VzE" secondAttribute="bottom" id="kGz-uu-zVV"/>
+                            <constraint firstAttribute="trailing" secondItem="cYR-Q0-VzE" secondAttribute="trailing" id="ytj-bG-XWn"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Near me" id="KaY-Qv-uN5"/>
+                    <connections>
+                        <outlet property="mapView" destination="cYR-Q0-VzE" id="rZ8-53-2fd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="St9-gc-QpG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
