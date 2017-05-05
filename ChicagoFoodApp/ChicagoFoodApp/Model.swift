@@ -33,7 +33,7 @@ class Model {
         
         for chicagoRest in chicagoRests {
             
-            if let facility = Facility(address: chicagoRest.address, name: chicagoRest.name, type: chicagoRest.type, license: chicagoRest.license, risk: chicagoRest.risk, latitude: chicagoRest.latitude, longitude: chicagoRest.longitude) {
+            if let facility = Facility(address: chicagoRest.address, name: chicagoRest.name, type: chicagoRest.type, license: chicagoRest.license, risk: chicagoRest.risk, latitude: chicagoRest.latitude, longitude: chicagoRest.longitude, favorited: chicagoRest.favorited) {
                 for inspection in chicagoRest.inspections {
                             if let eachInspection = Inspection(type: inspection.type, result: inspection.result, violation: inspection.violation, id: inspection.id, date: inspection.date) {
                                 facility.addToInpsections(eachInspection)

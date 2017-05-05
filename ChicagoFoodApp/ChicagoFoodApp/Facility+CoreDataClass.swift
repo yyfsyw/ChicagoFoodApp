@@ -16,7 +16,7 @@ public class Facility: NSManagedObject {
         return self.inpsections?.allObjects as? [Inspection]
     }
 
-    convenience init?(address: String, name: String, type: String, license: Int, risk: Decimal, latitude: Double, longitude: Double) {
+    convenience init?(address: String, name: String, type: String, license: Int, risk: Decimal, latitude: Double, longitude: Double, favorited: Bool) {
         guard let context = Model.sharedInstance.managedContext else { return nil }
         
         self.init(entity: Facility.entity(), insertInto: context)
@@ -28,5 +28,6 @@ public class Facility: NSManagedObject {
         self.risk = risk as NSDecimalNumber
         self.latitude = latitude
         self.longitude = longitude
+        self.favorited = favorited
     }
 }

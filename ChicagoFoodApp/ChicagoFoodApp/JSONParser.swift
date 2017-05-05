@@ -54,7 +54,7 @@ class JSONParser {
                             
                         })
                         if facilityChecking == nil {
-                            newFacility = FoodFacility(address: address, name: name, type: type, license: license, risk: risk, latitude: latitude, longitude: longitude)
+                            newFacility = FoodFacility(address: address, name: name, type: type, license: license, risk: risk, latitude: latitude, longitude: longitude, favorited: false)
                         }
                         else{//force unwrap the facilityChecking because it is not nil
                             newFacility = facilityChecking!

@@ -2,6 +2,7 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16E195" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Facility" representedClassName="Facility" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favorited" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="license" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
@@ -19,7 +20,7 @@
         <relationship name="facilities" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Facility" inverseName="inpsections" inverseEntity="Facility" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Facility" positionX="-297" positionY="-18" width="128" height="165"/>
+        <element name="Facility" positionX="-297" positionY="-18" width="128" height="178"/>
         <element name="Inspection" positionX="-54" positionY="45" width="128" height="135"/>
     </elements>
 </model>

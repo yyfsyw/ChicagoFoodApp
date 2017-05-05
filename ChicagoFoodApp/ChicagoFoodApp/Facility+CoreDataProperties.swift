@@ -2,7 +2,7 @@
 //  Facility+CoreDataProperties.swift
 //  ChicagoFoodApp
 //
-//  Created by zhang  zhihao on 4/24/17.
+//  Created by zhang  zhihao on 5/5/17.
 //  Copyright © 2017 YUNFEI YANG. All rights reserved.
 //
 
@@ -23,6 +23,7 @@ extension Facility {
     @NSManaged public var name: String?
     @NSManaged public var risk: NSDecimalNumber?
     @NSManaged public var type: String?
+    @NSManaged public var favorited: Bool
     @NSManaged public var inpsections: NSSet?
 
 }

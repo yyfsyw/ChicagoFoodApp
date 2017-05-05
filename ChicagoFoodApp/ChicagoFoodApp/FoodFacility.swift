@@ -16,10 +16,11 @@ struct FoodFacility {
     var latitude: Double
     var longitude: Double
     var license: Int
+    var favorited: Bool
     
     var inspections: [FoodInspection]
     
-    init(address: String, name: String, type: String, license: Int, risk: Decimal, latitude: Double, longitude: Double) {
+    init(address: String, name: String, type: String, license: Int, risk: Decimal, latitude: Double, longitude: Double, favorited: Bool) {
         self.address = address
         self.name = name
         self.type = type
@@ -27,6 +28,7 @@ struct FoodFacility {
         self.risk = risk
         self.latitude = latitude
         self.longitude = longitude
+        self.favorited = favorited
         
         self.inspections = [FoodInspection]()
         
