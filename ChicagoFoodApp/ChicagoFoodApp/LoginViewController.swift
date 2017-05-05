@@ -28,9 +28,9 @@ class LoginViewController: UIViewController {
         
         print("-------------------")
         for facility in facilities {
-//            print(facility.address ?? "")
-//            print(facility.longitude )
-//            print(facility.latitude )
+            print(facility.address ?? "")
+            print(facility.longitude )
+            print(facility.latitude )
             print(facility.favorited)
         }
 
