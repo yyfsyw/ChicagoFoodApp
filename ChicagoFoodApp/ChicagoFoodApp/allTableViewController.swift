@@ -11,12 +11,17 @@ import UIKit
 class allTableViewController: UITableViewController {
     @IBOutlet var allTable: UITableView!
 
+    @IBOutlet weak var searchBar: UISearchBar!
     var resturant = ["ResturantA", "ResturantB", "ResturantC"]
+    
+    var filteredData: [String]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         allTable.delegate = self
         allTable.dataSource = self
+        searchBar.delegate = self as? UISearchBarDelegate
+        filteredData = resturant
         self.title = "All"
     }
     
@@ -53,14 +58,13 @@ class allTableViewController: UITableViewController {
             destination.allResturant = resturant[row]
         }
     }
-    /*
-    // MARK: - Navigation
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        filteredData = searchText.isEmpty ? resturant : resturant.filter { (item: String) -> Bool in
+            // If dataItem matches the searchText, return true to include it
+            return item.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
+        }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+}
 }

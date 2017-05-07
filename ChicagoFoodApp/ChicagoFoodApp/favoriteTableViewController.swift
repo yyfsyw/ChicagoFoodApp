@@ -11,13 +11,17 @@ import UIKit
 class favoriteTableViewController: UITableViewController {
     @IBOutlet var favoriteTable: UITableView!
     
+    @IBOutlet weak var searchBar: UISearchBar!
     var favorites = ["ResturantA", "ResturantB", "ResturantC"]
 
-
+    var filteredData: [String]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         favoriteTable.delegate = self
         favoriteTable.dataSource = self
+        searchBar.delegate = self as? UISearchBarDelegate
+        filteredData = favorites
         self.title = "Favorite"
     }
 
@@ -55,6 +59,15 @@ class favoriteTableViewController: UITableViewController {
             destination.favorite = favorites[row]
         }
     }
-
-
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        filteredData = searchText.isEmpty ? favorites : favorites.filter { (item: String) -> Bool in
+            // If dataItem matches the searchText, return true to include it
+            return item.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
+        }
+        
+        tableView.reloadData()
+    }
 }
+
+
