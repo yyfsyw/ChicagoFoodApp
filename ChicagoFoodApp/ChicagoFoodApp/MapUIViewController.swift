@@ -69,7 +69,9 @@ class MapUIViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations[0]
         
-        let span = MKCoordinateSpanMake(0.1, 0.1)
+        manager.stopUpdatingLocation()
+        
+        let span = MKCoordinateSpanMake(0.01, 0.01)
         let myLocation = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
         let region = MKCoordinateRegionMake(myLocation, span)
         
@@ -107,6 +109,10 @@ class MapUIViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
         annotationView?.rightCalloutAccessoryView = button
         
         return annotationView
+    }
+    
+    @IBAction func refreshMapCenter(_ sender: UILongPressGestureRecognizer) {
+        manager.startUpdatingLocation()
     }
     
 

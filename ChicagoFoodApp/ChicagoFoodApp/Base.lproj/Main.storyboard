@@ -282,6 +282,11 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cYR-Q0-VzE">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outlet property="delegate" destination="psO-M9-trK" id="kYh-D0-Nwv"/>
+                                    <outletCollection property="gestureRecognizers" destination="v83-Nc-pi7" appends="YES" id="0uu-77-BSY"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -294,10 +299,15 @@
                     </view>
                     <navigationItem key="navigationItem" title="Near me" id="KaY-Qv-uN5"/>
                     <connections>
-                        <outlet property="mapView" destination="cYR-Q0-VzE" id="rZ8-53-2fd"/>
+                        <outlet property="mapView" destination="cYR-Q0-VzE" id="37k-no-j8U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="St9-gc-QpG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="v83-Nc-pi7">
+                    <connections>
+                        <action selector="refreshMapCenter:" destination="psO-M9-trK" id="ZwV-sX-POv"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-234" y="707"/>
         </scene>
