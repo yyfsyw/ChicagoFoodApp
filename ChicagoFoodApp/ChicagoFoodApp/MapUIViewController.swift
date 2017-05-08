@@ -15,6 +15,7 @@ class MapUIViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
     let manager = CLLocationManager()
 
     var facilities: [Facility] = []
+    var destination: CLLocationCoordinate2D? = nil
     
     class customMKPointAnnotation: MKPointAnnotation {
         var image: UIImage? = UIImage()
@@ -102,13 +103,60 @@ class MapUIViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
         annotationView!.image = cpa.image
         
         /* Right accessory view */
-        let image = UIImage(named: "infoIcon")
-        let button = UIButton(type: .custom)
-        button.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
-        button.setImage(image, for: UIControlState())
-        annotationView?.rightCalloutAccessoryView = button
+        annotationView?.calloutOffset = CGPoint(x: -5, y: 5)
+        annotationView?.rightCalloutAccessoryView = UIButton.init(type: .detailDisclosure) as UIView
         
         return annotationView
+    }
+    
+    /* This is What Happens When The I is Pushed in the Annotation */
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+
+    }
+    
+    func getDirections(){
+        print(destination!)
+        
+        let overlays = mapView.overlays
+        mapView.removeOverlays(overlays)
+        
+        let request = MKDirectionsRequest()
+        let newDestination = MKPlacemark.init(coordinate: destination!)
+        request.source = MKMapItem.forCurrentLocation()
+        request.destination = MKMapItem.init(placemark: newDestination)
+        request.requestsAlternateRoutes = false
+        
+        let directions = MKDirections(request: request)
+        
+        directions.calculate(completionHandler: {(response, error) in
+            
+            if error != nil {
+                print("Error getting directions")
+            } else {
+                self.showRoute(response!)
+            }
+        })
+    }
+    
+    func showRoute(_ response: MKDirectionsResponse) {
+        
+        for route in response.routes {
+            
+            mapView.add(route.polyline,
+                         level: MKOverlayLevel.aboveRoads)
+            for step in route.steps {
+                print(step.instructions)
+            }
+        }
+    }
+    
+    func mapView(_ mapView: MKMapView, rendererFor
+        overlay: MKOverlay) -> MKOverlayRenderer {
+        
+        let renderer = MKPolylineRenderer(overlay: overlay)
+        renderer.strokeColor = UIColor.blue
+        renderer.lineWidth = 5.0
+        return renderer
     }
     
     @IBAction func refreshMapCenter(_ sender: UILongPressGestureRecognizer) {
