@@ -11,7 +11,7 @@ import MapKit
 import CoreLocation
 
 class MapUIViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
-    @IBOutlet weak var mapView: MKMapView!
+//    @IBOutlet weak var mapView: MKMapView!
     let manager = CLLocationManager()
 
     var facilities: [Facility] = []
