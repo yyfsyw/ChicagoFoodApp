@@ -17,12 +17,14 @@ class MapUIViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
     var facilities: [Facility] = []
     var destination: CLLocationCoordinate2D? = nil
     
+    let testing: ViewController = ViewController()
+    
     class customMKPointAnnotation: MKPointAnnotation {
         var image: UIImage? = UIImage()
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad() 
         
         Model.sharedInstance.loadData()
         facilities = Model.sharedInstance.fetchFacilities()
