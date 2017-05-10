@@ -225,10 +225,10 @@
             </objects>
             <point key="canvasLocation" x="-2207.1999999999998" y="197.45127436281859"/>
         </scene>
-        <!--View Controller-->
+        <!--Details View Controller-->
         <scene sceneID="ICY-Bg-xiY">
             <objects>
-                <viewController id="m1D-Rf-pSo" sceneMemberID="viewController">
+                <viewController id="m1D-Rf-pSo" customClass="DetailsViewController" customModule="ChicagoFoodApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LrV-8a-J0q"/>
                         <viewControllerLayoutGuide type="bottom" id="cev-tM-UNv"/>
@@ -236,12 +236,73 @@
                     <view key="view" contentMode="scaleToFill" id="Aqw-oZ-bYP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Name Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uf1-zN-RYS">
+                                <rect key="frame" x="67.5" y="64" width="241.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Address Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yH5-QM-8mh">
+                                <rect key="frame" x="87" y="135" width="202" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Risk Level Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="th4-fu-ZC5">
+                                <rect key="frame" x="128" y="311.5" width="117.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9M-lB-VX4">
+                                <rect key="frame" x="126.5" y="206.5" width="122" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Get Directions"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wmc-aT-Vf6">
+                                <rect key="frame" x="16" y="373.5" width="343" height="293.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inspection Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9D-U0-6Of">
+                                <rect key="frame" x="119" y="342.5" width="136.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbk-Em-mLU">
+                                <rect key="frame" x="172" y="251.5" width="30" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                <state key="normal" title="Favorite" image="Hearts-25"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lbk-Em-mLU" firstAttribute="top" secondItem="h9M-lB-VX4" secondAttribute="bottom" constant="10" id="8q7-FQ-tEe"/>
+                            <constraint firstItem="h9M-lB-VX4" firstAttribute="top" secondItem="yH5-QM-8mh" secondAttribute="bottom" constant="50" id="IoD-78-Rg5"/>
+                            <constraint firstItem="Uf1-zN-RYS" firstAttribute="centerX" secondItem="Aqw-oZ-bYP" secondAttribute="centerX" id="JHB-zn-XCs"/>
+                            <constraint firstItem="yH5-QM-8mh" firstAttribute="centerX" secondItem="Aqw-oZ-bYP" secondAttribute="centerX" id="KEV-Mi-y5A"/>
+                            <constraint firstItem="i9D-U0-6Of" firstAttribute="centerX" secondItem="Aqw-oZ-bYP" secondAttribute="centerX" id="MU1-bd-O45"/>
+                            <constraint firstItem="i9D-U0-6Of" firstAttribute="top" secondItem="th4-fu-ZC5" secondAttribute="bottom" constant="10" id="Ob4-0F-eSX"/>
+                            <constraint firstItem="wmc-aT-Vf6" firstAttribute="top" secondItem="i9D-U0-6Of" secondAttribute="bottom" constant="10" id="SZ4-yH-v9D"/>
+                            <constraint firstItem="wmc-aT-Vf6" firstAttribute="bottom" secondItem="Aqw-oZ-bYP" secondAttribute="bottomMargin" id="VbW-L5-bRh"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="wmc-aT-Vf6" secondAttribute="leading" id="XKd-7i-9jD"/>
+                            <constraint firstItem="h9M-lB-VX4" firstAttribute="centerX" secondItem="Aqw-oZ-bYP" secondAttribute="centerX" id="a4E-26-2bD"/>
+                            <constraint firstItem="Uf1-zN-RYS" firstAttribute="top" secondItem="LrV-8a-J0q" secondAttribute="bottom" id="b2g-7K-Jke"/>
+                            <constraint firstItem="yH5-QM-8mh" firstAttribute="top" secondItem="Uf1-zN-RYS" secondAttribute="bottom" constant="42" id="fWd-sP-E5p"/>
+                            <constraint firstItem="lbk-Em-mLU" firstAttribute="centerX" secondItem="Aqw-oZ-bYP" secondAttribute="centerX" id="isa-pS-VSJ"/>
+                            <constraint firstItem="th4-fu-ZC5" firstAttribute="centerX" secondItem="Aqw-oZ-bYP" secondAttribute="centerX" id="jRp-eb-ulU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wmc-aT-Vf6" secondAttribute="trailing" id="kfv-Nc-eWy"/>
+                            <constraint firstItem="th4-fu-ZC5" firstAttribute="top" secondItem="lbk-Em-mLU" secondAttribute="bottom" constant="35" id="vxQ-P4-73t"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hdr-6o-QpZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-698" y="-715"/>
+            <point key="canvasLocation" x="-658.39999999999998" y="-556.37181409295351"/>
         </scene>
         <!--Near me-->
         <scene sceneID="lDj-cm-O68">
@@ -291,6 +352,7 @@
                     <navigationItem key="navigationItem" title="Near me" id="KaY-Qv-uN5"/>
                     <connections>
                         <outlet property="mapView" destination="mmc-47-WZi" id="2ah-wY-G2x"/>
+                        <segue destination="m1D-Rf-pSo" kind="show" identifier="mapInfoSeg" id="uia-oU-jwF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="St9-gc-QpG" userLabel="First Responder" sceneMemberID="firstResponder"/>

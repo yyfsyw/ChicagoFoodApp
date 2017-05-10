@@ -29,6 +29,7 @@
 		B7657F5E1E9C279E003D3966 /* ChicagoFoodAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7657F5D1E9C279E003D3966 /* ChicagoFoodAppTests.swift */; };
 		B7657F691E9C279E003D3966 /* ChicagoFoodAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7657F681E9C279E003D3966 /* ChicagoFoodAppUITests.swift */; };
 		D67160041EC29AB000263CC1 /* MapUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67160031EC29AB000263CC1 /* MapUIViewController.swift */; };
+		D6A41E021EC2B0F70090AC67 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A41E011EC2B0F70090AC67 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		B7657F681E9C279E003D3966 /* ChicagoFoodAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChicagoFoodAppUITests.swift; sourceTree = "<group>"; };
 		B7657F6A1E9C279E003D3966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D67160031EC29AB000263CC1 /* MapUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapUIViewController.swift; sourceTree = "<group>"; };
+		D6A41E011EC2B0F70090AC67 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				933CAF9C1EABFFAE001F6962 /* Model */,
 				933CAF9B1EABFF37001F6962 /* Miscellaneous */,
 				B7657F471E9C279D003D3966 /* ViewController.swift */,
+				D6A41E011EC2B0F70090AC67 /* DetailsViewController.swift */,
 				D67160031EC29AB000263CC1 /* MapUIViewController.swift */,
 				B72F6EEE1EB10EC30071989A /* LoginViewController.swift */,
 				B7657F491E9C279D003D3966 /* Main.storyboard */,

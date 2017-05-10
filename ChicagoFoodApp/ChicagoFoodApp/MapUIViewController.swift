@@ -69,6 +69,7 @@ class MapUIViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
         // Dispose of any resources that can be recreated.
     }
     
+    /* Shows User's Location in a Region */
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations[0]
         
@@ -113,7 +114,10 @@ class MapUIViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
     
     /* This is What Happens When The I is Pushed in the Annotation */
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-        
+        if control == view.rightCalloutAccessoryView {
+            print("Disclosure Pressed! \(String(describing: view.annotation?.subtitle ?? " "))")
+            self.performSegue(withIdentifier: "mapInfoSeg", sender: self)
+        }
     }
     
     func getDirections(){
