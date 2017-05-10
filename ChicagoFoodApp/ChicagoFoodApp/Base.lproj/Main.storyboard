@@ -290,6 +290,7 @@
                     <navigationItem key="navigationItem" title="Near me" id="KaY-Qv-uN5"/>
                     <connections>
                         <outlet property="mapView" destination="mmc-47-WZi" id="2ah-wY-G2x"/>
+                        <segue destination="m1D-Rf-pSo" kind="showDetail" identifier="mapInfoSeg" id="WNj-h2-uDV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="St9-gc-QpG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -308,6 +309,6 @@
         <image name="Select All Filled-25" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JHl-oL-zYx"/>
+        <segue reference="WNj-h2-uDV"/>
     </inferredMetricsTieBreakers>
 </document>
