@@ -17,7 +17,10 @@ class MapUIViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
     var facilities: [Facility] = []
     var destination: CLLocationCoordinate2D? = nil
     
-    let testing: ViewController = ViewController()
+    let detailsViewController: DetailsViewController = DetailsViewController()
+    
+    var facilityName: String = " "
+    var facilityAddress: String = " "
     
     class customMKPointAnnotation: MKPointAnnotation {
         var image: UIImage? = UIImage()
@@ -115,7 +118,9 @@ class MapUIViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
     /* This is What Happens When The I is Pushed in the Annotation */
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         if control == view.rightCalloutAccessoryView {
-            print("Disclosure Pressed! \(String(describing: view.annotation?.subtitle ?? " "))")
+            //print("Disclosure Pressed! \(String(describing: view.annotation?.subtitle ?? " "))")
+            facilityName = view.annotation!.title!!
+            facilityAddress = view.annotation!.subtitle!!
             self.performSegue(withIdentifier: "mapInfoSeg", sender: self)
         }
     }
@@ -171,14 +176,18 @@ class MapUIViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
     
     
     /*
-     // MARK: - Navigation
+     // MARK: - Navigation*/
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
+        if let destination = segue.destination as? DetailsViewController{
+            
+            destination.facilityName = facilityName 
+            destination.facilityAddress = facilityAddress 
+            
+        }
      }
-     */
+ 
     
 }
 
