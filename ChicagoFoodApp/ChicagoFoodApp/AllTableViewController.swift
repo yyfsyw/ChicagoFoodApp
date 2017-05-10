@@ -130,6 +130,7 @@ class AllTableViewController: UITableViewController {
             }
             destination.latitude = facilities[row].latitude
             destination.longitude = facilities[row].longitude
+            destination.favorites = facilities[row].favorited
             
   
         }
