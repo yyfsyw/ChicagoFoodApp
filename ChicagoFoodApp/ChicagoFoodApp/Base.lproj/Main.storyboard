@@ -238,7 +238,7 @@
         <!--Near me-->
         <scene sceneID="ePM-dw-0Xm">
             <objects>
-                <viewController id="psO-M9-trK" sceneMemberID="viewController">
+                <viewController id="psO-M9-trK" customClass="MapUIViewController" customModule="ChicagoFoodApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ulC-EP-ZEw"/>
                         <viewControllerLayoutGuide type="bottom" id="xg3-wB-yCq"/>
@@ -246,11 +246,34 @@
                     <view key="view" contentMode="scaleToFill" id="4EC-mE-1R7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mmc-47-WZi">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="SSD-Kc-IDU" appends="YES" id="8ad-h6-HjB"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mmc-47-WZi" firstAttribute="top" secondItem="ulC-EP-ZEw" secondAttribute="bottom" id="dWk-vp-ogB"/>
+                            <constraint firstAttribute="trailing" secondItem="mmc-47-WZi" secondAttribute="trailing" id="gCw-Vv-Ehr"/>
+                            <constraint firstItem="xg3-wB-yCq" firstAttribute="top" secondItem="mmc-47-WZi" secondAttribute="bottom" id="jCV-fR-zRQ"/>
+                            <constraint firstItem="mmc-47-WZi" firstAttribute="leading" secondItem="4EC-mE-1R7" secondAttribute="leading" id="yIg-m0-u4d"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Near me" id="KaY-Qv-uN5"/>
+                    <connections>
+                        <outlet property="mapView" destination="mmc-47-WZi" id="2ah-wY-G2x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="St9-gc-QpG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="SSD-Kc-IDU">
+                    <connections>
+                        <action selector="refreshMapCenter:" destination="psO-M9-trK" id="bKS-nE-4MN"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-2319" y="-1654"/>
         </scene>
