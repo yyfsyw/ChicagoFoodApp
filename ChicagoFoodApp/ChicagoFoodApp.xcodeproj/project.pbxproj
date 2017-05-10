@@ -32,6 +32,7 @@
 		B7657F5E1E9C279E003D3966 /* ChicagoFoodAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7657F5D1E9C279E003D3966 /* ChicagoFoodAppTests.swift */; };
 		B7657F691E9C279E003D3966 /* ChicagoFoodAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7657F681E9C279E003D3966 /* ChicagoFoodAppUITests.swift */; };
 		D67160041EC29AB000263CC1 /* MapUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67160031EC29AB000263CC1 /* MapUIViewController.swift */; };
+		D6A41E071EC2D7F90090AC67 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A41E061EC2D7F90090AC67 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		B7657F681E9C279E003D3966 /* ChicagoFoodAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChicagoFoodAppUITests.swift; sourceTree = "<group>"; };
 		B7657F6A1E9C279E003D3966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D67160031EC29AB000263CC1 /* MapUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapUIViewController.swift; sourceTree = "<group>"; };
+		D6A41E061EC2D7F90090AC67 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6A41E071EC2D7F90090AC67 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +156,7 @@
 				B7657F5C1E9C279E003D3966 /* ChicagoFoodAppTests */,
 				B7657F671E9C279E003D3966 /* ChicagoFoodAppUITests */,
 				B7657F431E9C279D003D3966 /* Products */,
+				D6A41E051EC2D7F90090AC67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -201,6 +205,14 @@
 				B7657F6A1E9C279E003D3966 /* Info.plist */,
 			);
 			path = ChicagoFoodAppUITests;
+			sourceTree = "<group>";
+		};
+		D6A41E051EC2D7F90090AC67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6A41E061EC2D7F90090AC67 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +283,7 @@
 				TargetAttributes = {
 					B7657F411E9C279D003D3966 = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = 5XAFU57DGJ;
+						DevelopmentTeam = Z3DNLVA4J3;
 						ProvisioningStyle = Automatic;
 					};
 					B7657F581E9C279E003D3966 = {
@@ -513,10 +525,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5XAFU57DGJ;
+				DEVELOPMENT_TEAM = Z3DNLVA4J3;
 				INFOPLIST_FILE = ChicagoFoodApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.mizzouri.cs.ChicagoFoodApp;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.missouri.cs.ChicagoFoodApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -526,10 +538,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5XAFU57DGJ;
+				DEVELOPMENT_TEAM = Z3DNLVA4J3;
 				INFOPLIST_FILE = ChicagoFoodApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.mizzouri.cs.ChicagoFoodApp;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.missouri.cs.ChicagoFoodApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

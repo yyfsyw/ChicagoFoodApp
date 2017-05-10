@@ -239,6 +239,9 @@
                                 <rect key="frame" x="126.5" y="206.5" width="122" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Get Directions"/>
+                                <connections>
+                                    <action selector="getDirections:" destination="m1D-Rf-pSo" eventType="touchUpInside" id="wQJ-nF-29E"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wmc-aT-Vf6">
                                 <rect key="frame" x="16" y="373.5" width="343" height="293.5"/>
@@ -257,6 +260,9 @@
                                 <rect key="frame" x="172" y="251.5" width="30" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="1"/>
                                 <state key="normal" title="Favorite" image="Hearts-25"/>
+                                <connections>
+                                    <action selector="favorited:" destination="m1D-Rf-pSo" eventType="touchUpInside" id="qkb-u6-jQi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -281,6 +287,7 @@
                     </view>
                     <connections>
                         <outlet property="address" destination="yH5-QM-8mh" id="7ga-JT-ZE8"/>
+                        <outlet property="favoriteButton" destination="lbk-Em-mLU" id="8y4-bn-5lh"/>
                         <outlet property="name" destination="Uf1-zN-RYS" id="Ivd-Hh-e6e"/>
                         <outlet property="risk" destination="th4-fu-ZC5" id="wFW-UZ-EHl"/>
                         <outlet property="violations" destination="wmc-aT-Vf6" id="S4v-j6-bvb"/>
