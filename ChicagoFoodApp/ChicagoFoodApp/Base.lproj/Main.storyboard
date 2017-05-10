@@ -89,6 +89,9 @@
                                         <constraint firstItem="e57-7X-Sno" firstAttribute="width" secondItem="yTl-05-WyN" secondAttribute="height" multiplier="9:11" id="zOz-AF-3pJ"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="m1D-Rf-pSo" kind="showDetail" id="dR5-ax-VdF"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -200,6 +203,9 @@
                                         <constraint firstItem="qGf-Nw-7E9" firstAttribute="leading" secondItem="BVn-nd-re4" secondAttribute="trailing" constant="8" id="ylb-SM-kA3"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="m1D-Rf-pSo" kind="showDetail" id="JHl-oL-zYx"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -217,6 +223,24 @@
                 </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="-2207" y="198"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ICY-Bg-xiY">
+            <objects>
+                <viewController id="m1D-Rf-pSo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LrV-8a-J0q"/>
+                        <viewControllerLayoutGuide type="bottom" id="cev-tM-UNv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Aqw-oZ-bYP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hdr-6o-QpZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-698" y="-715"/>
         </scene>
         <!--Near me-->
         <scene sceneID="lDj-cm-O68">
@@ -283,4 +307,7 @@
         <image name="Hearts-25" width="25" height="25"/>
         <image name="Select All Filled-25" width="25" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="JHl-oL-zYx"/>
+    </inferredMetricsTieBreakers>
 </document>
