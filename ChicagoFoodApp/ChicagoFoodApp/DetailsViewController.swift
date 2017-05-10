@@ -2,7 +2,7 @@
 //  DetailsViewController.swift
 //  ChicagoFoodApp
 //
-//  Created by Michael Tompkins on 5/9/17.
+//  Created by zhang  zhihao on 5/9/17.
 //  Copyright © 2017 YUNFEI YANG. All rights reserved.
 //
 
@@ -10,12 +10,27 @@ import UIKit
 
 class DetailsViewController: UIViewController {
 
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var address: UILabel!
+    @IBOutlet weak var risk: UILabel!
+    @IBOutlet weak var violations: UITextView!
+    
+  
+    var facilityName: String = ""
+    var facilityAddress: String = ""
+    var facilityRisk: String = ""
+    var facilityViolations: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
+        name.text = facilityName
+        address.text = facilityAddress
+//        risk.text = ""
 
+   
+    }
+ 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

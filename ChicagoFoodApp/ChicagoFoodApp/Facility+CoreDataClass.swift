@@ -15,6 +15,7 @@ public class Facility: NSManagedObject {
     var inspectionArray: [Inspection]? {
         return self.inpsections?.allObjects as? [Inspection]
     }
+    
 
     convenience init?(address: String, name: String, type: String, license: Int, risk: Decimal, latitude: Double, longitude: Double, favorited: Bool) {
         guard let context = Model.sharedInstance.managedContext else { return nil }

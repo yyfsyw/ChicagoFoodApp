@@ -90,7 +90,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="m1D-Rf-pSo" kind="show" id="est-9F-Yez"/>
+                                    <segue destination="m1D-Rf-pSo" kind="show" action="showDetailViewController:sender:" id="dR5-ax-VdF"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -263,7 +263,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wmc-aT-Vf6">
                                 <rect key="frame" x="16" y="373.5" width="343" height="293.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -299,6 +299,12 @@
                             <constraint firstItem="th4-fu-ZC5" firstAttribute="top" secondItem="lbk-Em-mLU" secondAttribute="bottom" constant="35" id="vxQ-P4-73t"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="address" destination="yH5-QM-8mh" id="7ga-JT-ZE8"/>
+                        <outlet property="name" destination="Uf1-zN-RYS" id="Ivd-Hh-e6e"/>
+                        <outlet property="risk" destination="th4-fu-ZC5" id="wFW-UZ-EHl"/>
+                        <outlet property="violations" destination="wmc-aT-Vf6" id="S4v-j6-bvb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hdr-6o-QpZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -13,7 +13,7 @@ class AllTableViewController: UITableViewController {
     @IBOutlet var allFacilitiesTable: UITableView!
     
     
-     var facilities: [Facility] = []
+    var facilities: [Facility] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         Model.sharedInstance.loadData()
@@ -95,14 +95,23 @@ class AllTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if let destination = segue.destination as? DetailsViewController,
+            let row = allFacilitiesTable.indexPathForSelectedRow?.row{
+           
+            destination.facilityName = facilities[row].name ?? ""
+            destination.facilityAddress = facilities[row].address ?? ""
+        
+
+//            destination.name.text = facilities[row].name
+           
+        }
+        
     }
-    */
+ 
 
 }
