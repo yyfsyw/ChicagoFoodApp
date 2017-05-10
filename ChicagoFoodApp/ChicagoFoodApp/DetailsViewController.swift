@@ -19,14 +19,28 @@ class DetailsViewController: UIViewController {
     var facilityName: String = ""
     var facilityAddress: String = ""
     var facilityRisk: String = ""
-    var facilityViolations: String = ""
+    var facilityViolations: [String] = []
+    var latitude: Double = 0.0
+    var longitude: Double = 0.0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         name.text = facilityName
         address.text = facilityAddress
-//        risk.text = ""
+        risk.text = facilityRisk
+        for violation in facilityViolations {
+            violations.text = violation
+ 
+        }
+        if violations.text == "" {
+            violations.text = "No comments about violations"
+        }
+        
+       
+        print("latitude: \(latitude)")
+        print("longitude: \(longitude)")
 
    
     }
