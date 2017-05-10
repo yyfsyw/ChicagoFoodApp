@@ -65,7 +65,7 @@ class FavoriteTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "favoritetablecell", for: indexPath)
 
         if let cell = cell as? FavoriteTableViewCell {
-            cell.facilityName.text = facilities[indexPath.row].name ?? "Not available"
+            cell.facilityName.text = facilities[indexPath.row].name ?? ""
             
         }
 
@@ -116,8 +116,8 @@ class FavoriteTableViewController: UITableViewController {
         if let destination = segue.destination as? DetailsViewController,
             let row = facilityTableView.indexPathForSelectedRow?.row{
             
-            destination.facilityName = facilities[row].name ?? "Not available"
-            destination.facilityAddress = facilities[row].address ?? "Not available"
+            destination.facilityName = facilities[row].name ?? ""
+            destination.facilityAddress = facilities[row].address ?? ""
             if let riskValue = facilities[row].risk {
                 if riskValue == 1 {
                     destination.facilityRisk = "Risk 1 (High)"

@@ -42,6 +42,7 @@ class DetailsViewController: UIViewController {
        
         print("latitude: \(latitude)")
         print("longitude: \(longitude)")
+        print("favorite: \(favorites)")
 
    
     }

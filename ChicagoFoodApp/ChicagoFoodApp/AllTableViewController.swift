@@ -50,9 +50,12 @@ class AllTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "allfacilitiescell", for: indexPath)
         
         if let cell = cell as? AllFacilityTableViewCell {
-            cell.facilityAddress.text = facilities[indexPath.row].address ?? "Not available"
-            cell.facilityName.text = facilities[indexPath.row].name ?? "Not available"
-            cell.facilityType.text = facilities[indexPath.row].type ?? "Not available"
+            cell.facilityAddress.text = facilities[indexPath.row].address ?? ""
+            cell.facilityName.text = facilities[indexPath.row].name ?? ""
+            cell.facilityType.text = facilities[indexPath.row].type ?? ""
+            if cell.facilityType.text == "" {
+                cell.facilityType.text = "Not available"
+            }
 
         }
 
@@ -103,8 +106,8 @@ class AllTableViewController: UITableViewController {
         if let destination = segue.destination as? DetailsViewController,
             let row = allFacilitiesTable.indexPathForSelectedRow?.row{
            
-            destination.facilityName = facilities[row].name ?? "Not available"
-            destination.facilityAddress = facilities[row].address ?? "Not available"
+            destination.facilityName = facilities[row].name ?? ""
+            destination.facilityAddress = facilities[row].address ?? ""
             if let riskValue = facilities[row].risk {
                 if riskValue == 1 {
                     destination.facilityRisk = "Risk 1 (High)"
