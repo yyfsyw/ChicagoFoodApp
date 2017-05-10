@@ -56,6 +56,13 @@ class AllTableViewController: UITableViewController {
             if cell.facilityType.text == "" {
                 cell.facilityType.text = "Not available"
             }
+            if (facilities[indexPath.row].risk == 1){
+                cell.photoView.image = UIImage.init(named: "risk1List")
+            }else if (facilities[indexPath.row].risk == 2){
+                cell.photoView.image = UIImage.init(named: "risk2List")
+            }else{
+                cell.photoView.image = UIImage.init(named: "risk3List")
+            }
 
         }
 
