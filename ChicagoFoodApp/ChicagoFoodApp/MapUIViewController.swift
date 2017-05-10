@@ -220,6 +220,7 @@ class MapUIViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
             }
             destination.latitude = facilities[0].latitude
             destination.longitude = facilities[0].longitude
+            destination.facilityFavorited = facilities[0].favorited
         }
      }
  

@@ -16,25 +16,39 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var violations: UITextView!
     @IBOutlet weak var favoriteButton: UIButton!
     
+    
+    var facilities: [Facility] = []
+    var searchedFacility: [Facility] = []
   
     var facilityName: String = ""
     var facilityAddress: String = ""
     var facilityRisk: String = ""
     var facilityViolations: [String] = []
+    var facilityFavorited: Bool = false
     var latitude: Double = 0.0
     var longitude: Double = 0.0
     var favorites: Bool = false
+    var index = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        Model.sharedInstance.loadData()
+        facilities = Model.sharedInstance.fetchFacilities()
+        
+        searchedFacility = facilities.filter({ (element) -> Bool in
+            return element.name == facilityName
+        })
+        
         /* Changes to Favorite Button Look */
-//        if(facility.favorite == true){
-//            favoriteButton.setImage(UIImage(named: "Hearts-25"), for: UIControlState.normal)
-//        }
-//        else{
-//            favoriteButton.setImage(UIImage(named: "Hearts-25White"), for: UIControlState.normal)
-//        }
+        if(facilityFavorited == true){
+            favoriteButton.setImage(UIImage(named: "Hearts-25"), for: UIControlState.normal)
+        }
+        else{
+            favoriteButton.setImage(UIImage(named: "Hearts-25White"), for: UIControlState.normal)
+        }
+        
+        print(facilityFavorited)
         
         name.text = facilityName
         address.text = facilityAddress
@@ -61,26 +75,26 @@ class DetailsViewController: UIViewController {
     
     /* Favorite/Track a restuarant */
     @IBAction func favorited(_ sender: UIButton) {
-//        if(facility.favorite == false){
-//            facility.favorite = true
-//            do{
-//                try facility.managedObjectContext?.save()
-//            } catch {
-//                let saveError = error as NSError
-//                print(saveError)
-//            }
-//            favoriteButton.setImage(UIImage(named: "Hearts-25"), for: UIControlState.normal)
-//        }
-//        else{
-//            facility.favorite = false
-//            do{
-//                try facility.managedObjectContext?.save()
-//            } catch {
-//                let saveError = error as NSError
-//                print(saveError)
-//            }
-//            favoriteButton.setImage(UIImage(named: "Hearts-25White"), for: UIControlState.normal)
-//        }
+        if(facilityFavorited == false){
+            searchedFacility[0].favorited = true
+            do{
+                try searchedFacility[0].managedObjectContext?.save()
+            } catch {
+                let saveError = error as NSError
+                print(saveError)
+            }
+            favoriteButton.setImage(UIImage(named: "Hearts-25"), for: UIControlState.normal)
+        }
+        else{
+            searchedFacility[0].favorited = false
+            do{
+                try searchedFacility[0].managedObjectContext?.save()
+            } catch {
+                let saveError = error as NSError
+                print(saveError)
+            }
+            favoriteButton.setImage(UIImage(named: "Hearts-25White"), for: UIControlState.normal)
+        }
     }
     /*
     // MARK: - Navigation
