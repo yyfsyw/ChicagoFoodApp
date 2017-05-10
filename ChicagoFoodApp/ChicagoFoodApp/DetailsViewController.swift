@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class DetailsViewController: UIViewController {
 
@@ -16,6 +17,7 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var violations: UITextView!
     @IBOutlet weak var favoriteButton: UIButton!
     
+    let mapUIViewControllor: MapUIViewController = MapUIViewController()
     
     var facilities: [Facility] = []
     var searchedFacility: [Facility] = []
@@ -70,6 +72,9 @@ class DetailsViewController: UIViewController {
     
     /* Get Directions */
     @IBAction func getDirections(_ sender: UIButton) {
+        let destination = CLLocationCoordinate2DMake(latitude, longitude)
+        mapUIViewControllor.destination = destination
+        mapUIViewControllor.getDirections()
     }
 
     
