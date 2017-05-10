@@ -17,7 +17,6 @@
 		935DD5A11EAD61360077A4C4 /* FoodInspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935DD5A01EAD61360077A4C4 /* FoodInspection.swift */; };
 		935DD5A41EAD61400077A4C4 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935DD5A21EAD61400077A4C4 /* JSONLoader.swift */; };
 		935DD5A51EAD61400077A4C4 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935DD5A31EAD61400077A4C4 /* JSONParser.swift */; };
-		93F385841EBCFB0800D8E948 /* AllListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F385831EBCFB0800D8E948 /* AllListViewController.swift */; };
 		B72F6EEF1EB10EC30071989A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72F6EEE1EB10EC30071989A /* LoginViewController.swift */; };
 		B7657F461E9C279D003D3966 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7657F451E9C279D003D3966 /* AppDelegate.swift */; };
 		B7657F481E9C279D003D3966 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7657F471E9C279D003D3966 /* ViewController.swift */; };
@@ -58,7 +57,6 @@
 		935DD5A01EAD61360077A4C4 /* FoodInspection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodInspection.swift; sourceTree = "<group>"; };
 		935DD5A21EAD61400077A4C4 /* JSONLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
 		935DD5A31EAD61400077A4C4 /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
-		93F385831EBCFB0800D8E948 /* AllListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllListViewController.swift; sourceTree = "<group>"; };
 		B72F6EEE1EB10EC30071989A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B7657F421E9C279D003D3966 /* ChicagoFoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChicagoFoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7657F451E9C279D003D3966 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -168,7 +166,6 @@
 				B72F6EEE1EB10EC30071989A /* LoginViewController.swift */,
 				B7657F491E9C279D003D3966 /* Main.storyboard */,
 				B7657F4C1E9C279D003D3966 /* ChicagoFoodApp.xcdatamodeld */,
-				93F385831EBCFB0800D8E948 /* AllListViewController.swift */,
 			);
 			path = ChicagoFoodApp;
 			sourceTree = "<group>";
@@ -340,7 +337,6 @@
 				933CAFA41EAC1147001F6962 /* Inspection+CoreDataProperties.swift in Sources */,
 				933CAFA21EAC1147001F6962 /* Facility+CoreDataProperties.swift in Sources */,
 				933CAFA31EAC1147001F6962 /* Inspection+CoreDataClass.swift in Sources */,
-				93F385841EBCFB0800D8E948 /* AllListViewController.swift in Sources */,
 				B7657F461E9C279D003D3966 /* AppDelegate.swift in Sources */,
 				B72F6EEF1EB10EC30071989A /* LoginViewController.swift in Sources */,
 				B7657F4E1E9C279D003D3966 /* ChicagoFoodApp.xcdatamodeld in Sources */,
