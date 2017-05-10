@@ -1,25 +1,40 @@
 //
-//  AllTableViewController.swift
+//  FavoriteTableViewController.swift
 //  ChicagoFoodApp
 //
-//  Created by zhang  zhihao on 5/9/17.
+//  Created by zhang  zhihao on 5/10/17.
 //  Copyright © 2017 YUNFEI YANG. All rights reserved.
 //
 
 import UIKit
 
-class AllTableViewController: UITableViewController {
+class FavoriteTableViewController: UITableViewController {
 
-    @IBOutlet var allFacilitiesTable: UITableView!
-    
+    @IBOutlet var facilityTableView: UITableView!
     
     var facilities: [Facility] = []
+    var numOfFavorites = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         Model.sharedInstance.loadData()
         facilities = Model.sharedInstance.fetchFacilities()
         print("-------------------")
         print(facilities.count)
+        
+        
+        print(facilities[0].name!)
+        print(facilities[0].favorited)
+         
+        
+        
+        for facility in facilities {
+            if facility.favorited == true{
+                numOfFavorites += 1
+            }
+        }
+        print(numOfFavorites)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -42,18 +57,16 @@ class AllTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return facilities.count
+        return numOfFavorites
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "allfacilitiescell", for: indexPath)
-        
-        if let cell = cell as? AllFacilityTableViewCell {
-            cell.facilityAddress.text = facilities[indexPath.row].address ?? "Not available"
-            cell.facilityName.text = facilities[indexPath.row].name ?? "Not available"
-            cell.facilityType.text = facilities[indexPath.row].type ?? "Not available"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "favoritetablecell", for: indexPath)
 
+        if let cell = cell as? FavoriteTableViewCell {
+            cell.facilityName.text = facilities[indexPath.row].name ?? "Not available"
+            
         }
 
         return cell
@@ -101,8 +114,8 @@ class AllTableViewController: UITableViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? DetailsViewController,
-            let row = allFacilitiesTable.indexPathForSelectedRow?.row{
-           
+            let row = facilityTableView.indexPathForSelectedRow?.row{
+            
             destination.facilityName = facilities[row].name ?? "Not available"
             destination.facilityAddress = facilities[row].address ?? "Not available"
             if let riskValue = facilities[row].risk {
@@ -120,7 +133,7 @@ class AllTableViewController: UITableViewController {
                 }
                 
             }
-
+            
             if let inspections = facilities[row].inspectionArray{
                 for inspection in inspections{
                     if let violation = inspection.violation{
@@ -131,9 +144,8 @@ class AllTableViewController: UITableViewController {
             destination.latitude = facilities[row].latitude
             destination.longitude = facilities[row].longitude
             
-  
+            
         }
-        
     }
  
 
