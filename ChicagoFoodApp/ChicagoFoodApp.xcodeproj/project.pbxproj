@@ -6,29 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		9333868E1EAD549500FF4B18 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 9333868D1EAD549500FF4B18 /* test.json */; };
-		933386901EAD560800FF4B18 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333868F1EAD560800FF4B18 /* Model.swift */; };
-		933CAFA11EAC1147001F6962 /* Facility+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CAF9D1EAC1147001F6962 /* Facility+CoreDataClass.swift */; };
-		933CAFA21EAC1147001F6962 /* Facility+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CAF9E1EAC1147001F6962 /* Facility+CoreDataProperties.swift */; };
-		933CAFA31EAC1147001F6962 /* Inspection+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CAF9F1EAC1147001F6962 /* Inspection+CoreDataClass.swift */; };
-		933CAFA41EAC1147001F6962 /* Inspection+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CAFA01EAC1147001F6962 /* Inspection+CoreDataProperties.swift */; };
-		935DD59F1EAD612D0077A4C4 /* FoodFacility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935DD59E1EAD612D0077A4C4 /* FoodFacility.swift */; };
-		935DD5A11EAD61360077A4C4 /* FoodInspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935DD5A01EAD61360077A4C4 /* FoodInspection.swift */; };
-		935DD5A41EAD61400077A4C4 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935DD5A21EAD61400077A4C4 /* JSONLoader.swift */; };
-		935DD5A51EAD61400077A4C4 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935DD5A31EAD61400077A4C4 /* JSONParser.swift */; };
-		B72F6EEF1EB10EC30071989A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72F6EEE1EB10EC30071989A /* LoginViewController.swift */; };
-		B7657F461E9C279D003D3966 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7657F451E9C279D003D3966 /* AppDelegate.swift */; };
-		B7657F481E9C279D003D3966 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7657F471E9C279D003D3966 /* ViewController.swift */; };
-		B7657F4E1E9C279D003D3966 /* ChicagoFoodApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B7657F4C1E9C279D003D3966 /* ChicagoFoodApp.xcdatamodeld */; };
-		B7657F501E9C279D003D3966 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7657F4F1E9C279D003D3966 /* Assets.xcassets */; };
-		B7657F531E9C279D003D3966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7657F511E9C279D003D3966 /* LaunchScreen.storyboard */; };
-		B7657F5E1E9C279E003D3966 /* ChicagoFoodAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7657F5D1E9C279E003D3966 /* ChicagoFoodAppTests.swift */; };
-		B7657F691E9C279E003D3966 /* ChicagoFoodAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7657F681E9C279E003D3966 /* ChicagoFoodAppUITests.swift */; };
-		D62EF3381EBCF6E700295051 /* MapUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62EF3371EBCF6E700295051 /* MapUIViewController.swift */; };
-		D62EF33B1EBCF74800295051 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62EF33A1EBCF74800295051 /* CoreLocation.framework */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		B7657F5A1E9C279E003D3966 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -47,32 +24,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9333868D1EAD549500FF4B18 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
-		9333868F1EAD560800FF4B18 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		933CAF9D1EAC1147001F6962 /* Facility+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Facility+CoreDataClass.swift"; sourceTree = "<group>"; };
-		933CAF9E1EAC1147001F6962 /* Facility+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Facility+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		933CAF9F1EAC1147001F6962 /* Inspection+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Inspection+CoreDataClass.swift"; sourceTree = "<group>"; };
-		933CAFA01EAC1147001F6962 /* Inspection+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Inspection+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		935DD59E1EAD612D0077A4C4 /* FoodFacility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodFacility.swift; sourceTree = "<group>"; };
-		935DD5A01EAD61360077A4C4 /* FoodInspection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodInspection.swift; sourceTree = "<group>"; };
-		935DD5A21EAD61400077A4C4 /* JSONLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
-		935DD5A31EAD61400077A4C4 /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
-		B72F6EEE1EB10EC30071989A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		B7657F421E9C279D003D3966 /* ChicagoFoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChicagoFoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7657F451E9C279D003D3966 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B7657F471E9C279D003D3966 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B7657F4D1E9C279D003D3966 /* ChicagoFoodApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChicagoFoodApp.xcdatamodel; sourceTree = "<group>"; };
-		B7657F4F1E9C279D003D3966 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B7657F521E9C279D003D3966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B7657F541E9C279D003D3966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B7657F591E9C279E003D3966 /* ChicagoFoodAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChicagoFoodAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7657F5D1E9C279E003D3966 /* ChicagoFoodAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChicagoFoodAppTests.swift; sourceTree = "<group>"; };
-		B7657F5F1E9C279E003D3966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B7657F641E9C279E003D3966 /* ChicagoFoodAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChicagoFoodAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7657F681E9C279E003D3966 /* ChicagoFoodAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChicagoFoodAppUITests.swift; sourceTree = "<group>"; };
-		B7657F6A1E9C279E003D3966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D62EF3371EBCF6E700295051 /* MapUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapUIViewController.swift; sourceTree = "<group>"; };
-		D62EF33A1EBCF74800295051 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		93B0C8C51EC3144B00758A0C /* ChicagoFoodAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChicagoFoodAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93B0C8C61EC3144B00758A0C /* ChicagoFoodAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChicagoFoodAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7657F421E9C279D003D3966 /* ChicagoFoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ChicagoFoodApp.app; path = "/Users/zhangzhihao/Downloads/IT4500 swift development/Zhihao_FP_ChicagoFood/ChicagoFoodApp/ChicagoFoodApp/build/Debug-iphoneos/ChicagoFoodApp.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +34,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D62EF33B1EBCF74800295051 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,100 +54,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		933386841EAD540400FF4B18 /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-				935DD59E1EAD612D0077A4C4 /* FoodFacility.swift */,
-				935DD5A01EAD61360077A4C4 /* FoodInspection.swift */,
-				935DD5A21EAD61400077A4C4 /* JSONLoader.swift */,
-				935DD5A31EAD61400077A4C4 /* JSONParser.swift */,
-				9333868D1EAD549500FF4B18 /* test.json */,
-			);
-			name = JSON;
-			sourceTree = "<group>";
-		};
-		933CAF9B1EABFF37001F6962 /* Miscellaneous */ = {
-			isa = PBXGroup;
-			children = (
-				B7657F451E9C279D003D3966 /* AppDelegate.swift */,
-				B7657F4F1E9C279D003D3966 /* Assets.xcassets */,
-				B7657F511E9C279D003D3966 /* LaunchScreen.storyboard */,
-				B7657F541E9C279D003D3966 /* Info.plist */,
-			);
-			name = Miscellaneous;
-			sourceTree = "<group>";
-		};
-		933CAF9C1EABFFAE001F6962 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				933CAF9D1EAC1147001F6962 /* Facility+CoreDataClass.swift */,
-				933CAF9E1EAC1147001F6962 /* Facility+CoreDataProperties.swift */,
-				933CAF9F1EAC1147001F6962 /* Inspection+CoreDataClass.swift */,
-				933CAFA01EAC1147001F6962 /* Inspection+CoreDataProperties.swift */,
-				933386841EAD540400FF4B18 /* JSON */,
-				9333868F1EAD560800FF4B18 /* Model.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
 		B7657F391E9C279D003D3966 = {
 			isa = PBXGroup;
 			children = (
-				B7657F441E9C279D003D3966 /* ChicagoFoodApp */,
-				B7657F5C1E9C279E003D3966 /* ChicagoFoodAppTests */,
-				B7657F671E9C279E003D3966 /* ChicagoFoodAppUITests */,
-				B7657F431E9C279D003D3966 /* Products */,
-				D62EF3391EBCF74800295051 /* Frameworks */,
+				93B0C8C51EC3144B00758A0C /* ChicagoFoodAppTests.xctest */,
+				93B0C8C61EC3144B00758A0C /* ChicagoFoodAppUITests.xctest */,
 			);
-			sourceTree = "<group>";
-		};
-		B7657F431E9C279D003D3966 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B7657F421E9C279D003D3966 /* ChicagoFoodApp.app */,
-				B7657F591E9C279E003D3966 /* ChicagoFoodAppTests.xctest */,
-				B7657F641E9C279E003D3966 /* ChicagoFoodAppUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B7657F441E9C279D003D3966 /* ChicagoFoodApp */ = {
-			isa = PBXGroup;
-			children = (
-				933CAF9C1EABFFAE001F6962 /* Model */,
-				933CAF9B1EABFF37001F6962 /* Miscellaneous */,
-				B7657F471E9C279D003D3966 /* ViewController.swift */,
-				D62EF3371EBCF6E700295051 /* MapUIViewController.swift */,
-				B72F6EEE1EB10EC30071989A /* LoginViewController.swift */,
-				B7657F4C1E9C279D003D3966 /* ChicagoFoodApp.xcdatamodeld */,
-			);
-			path = ChicagoFoodApp;
-			sourceTree = "<group>";
-		};
-		B7657F5C1E9C279E003D3966 /* ChicagoFoodAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				B7657F5D1E9C279E003D3966 /* ChicagoFoodAppTests.swift */,
-				B7657F5F1E9C279E003D3966 /* Info.plist */,
-			);
-			path = ChicagoFoodAppTests;
-			sourceTree = "<group>";
-		};
-		B7657F671E9C279E003D3966 /* ChicagoFoodAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B7657F681E9C279E003D3966 /* ChicagoFoodAppUITests.swift */,
-				B7657F6A1E9C279E003D3966 /* Info.plist */,
-			);
-			path = ChicagoFoodAppUITests;
-			sourceTree = "<group>";
-		};
-		D62EF3391EBCF74800295051 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D62EF33A1EBCF74800295051 /* CoreLocation.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +97,7 @@
 			);
 			name = ChicagoFoodAppTests;
 			productName = ChicagoFoodAppTests;
-			productReference = B7657F591E9C279E003D3966 /* ChicagoFoodAppTests.xctest */;
+			productReference = 93B0C8C51EC3144B00758A0C /* ChicagoFoodAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		B7657F631E9C279E003D3966 /* ChicagoFoodAppUITests */ = {
@@ -250,7 +115,7 @@
 			);
 			name = ChicagoFoodAppUITests;
 			productName = ChicagoFoodAppUITests;
-			productReference = B7657F641E9C279E003D3966 /* ChicagoFoodAppUITests.xctest */;
+			productReference = 93B0C8C61EC3144B00758A0C /* ChicagoFoodAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -291,7 +156,7 @@
 				Base,
 			);
 			mainGroup = B7657F391E9C279D003D3966;
-			productRefGroup = B7657F431E9C279D003D3966 /* Products */;
+			productRefGroup = B7657F391E9C279D003D3966;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -307,9 +172,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7657F531E9C279D003D3966 /* LaunchScreen.storyboard in Resources */,
-				9333868E1EAD549500FF4B18 /* test.json in Resources */,
-				B7657F501E9C279D003D3966 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,20 +196,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				933CAFA11EAC1147001F6962 /* Facility+CoreDataClass.swift in Sources */,
-				935DD5A41EAD61400077A4C4 /* JSONLoader.swift in Sources */,
-				935DD5A51EAD61400077A4C4 /* JSONParser.swift in Sources */,
-				935DD5A11EAD61360077A4C4 /* FoodInspection.swift in Sources */,
-				935DD59F1EAD612D0077A4C4 /* FoodFacility.swift in Sources */,
-				B7657F481E9C279D003D3966 /* ViewController.swift in Sources */,
-				933386901EAD560800FF4B18 /* Model.swift in Sources */,
-				933CAFA41EAC1147001F6962 /* Inspection+CoreDataProperties.swift in Sources */,
-				933CAFA21EAC1147001F6962 /* Facility+CoreDataProperties.swift in Sources */,
-				D62EF3381EBCF6E700295051 /* MapUIViewController.swift in Sources */,
-				933CAFA31EAC1147001F6962 /* Inspection+CoreDataClass.swift in Sources */,
-				B7657F461E9C279D003D3966 /* AppDelegate.swift in Sources */,
-				B72F6EEF1EB10EC30071989A /* LoginViewController.swift in Sources */,
-				B7657F4E1E9C279D003D3966 /* ChicagoFoodApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +203,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7657F5E1E9C279E003D3966 /* ChicagoFoodAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +210,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7657F691E9C279E003D3966 /* ChicagoFoodAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,17 +227,6 @@
 			targetProxy = B7657F651E9C279E003D3966 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		B7657F511E9C279D003D3966 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B7657F521E9C279D003D3966 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B7657F6B1E9C279E003D3966 /* Debug */ = {
@@ -518,7 +353,6 @@
 		B7657F711E9C279E003D3966 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 5XAFU57DGJ;
 				INFOPLIST_FILE = ChicagoFoodAppTests/Info.plist;
@@ -533,7 +367,6 @@
 		B7657F721E9C279E003D3966 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 5XAFU57DGJ;
 				INFOPLIST_FILE = ChicagoFoodAppTests/Info.plist;
@@ -548,7 +381,6 @@
 		B7657F741E9C279E003D3966 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 5XAFU57DGJ;
 				INFOPLIST_FILE = ChicagoFoodAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -562,7 +394,6 @@
 		B7657F751E9C279E003D3966 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 5XAFU57DGJ;
 				INFOPLIST_FILE = ChicagoFoodAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -613,19 +444,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		B7657F4C1E9C279D003D3966 /* ChicagoFoodApp.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				B7657F4D1E9C279D003D3966 /* ChicagoFoodApp.xcdatamodel */,
-			);
-			currentVersion = B7657F4D1E9C279D003D3966 /* ChicagoFoodApp.xcdatamodel */;
-			path = ChicagoFoodApp.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = B7657F3A1E9C279D003D3966 /* Project object */;
 }
