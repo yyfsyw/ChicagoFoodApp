@@ -14,6 +14,7 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var address: UILabel!
     @IBOutlet weak var risk: UILabel!
     @IBOutlet weak var violations: UITextView!
+    @IBOutlet weak var favoriteButton: UIButton!
     
   
     var facilityName: String = ""
@@ -23,26 +24,27 @@ class DetailsViewController: UIViewController {
     var latitude: Double = 0.0
     var longitude: Double = 0.0
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        /* Changes to Favorite Button Look */
+//        if(facility.favorite == true){
+//            favoriteButton.setImage(UIImage(named: "Hearts-25"), for: UIControlState.normal)
+//        }
+//        else{
+//            favoriteButton.setImage(UIImage(named: "Hearts-25White"), for: UIControlState.normal)
+//        }
+        
         name.text = facilityName
         address.text = facilityAddress
+        print(facilityAddress)
         risk.text = facilityRisk
         for violation in facilityViolations {
             violations.text = violation
- 
         }
         if violations.text == "" {
             violations.text = "No comments about violations"
         }
-        
-       
-        print("latitude: \(latitude)")
-        print("longitude: \(longitude)")
-
-   
     }
  
     override func didReceiveMemoryWarning() {
@@ -50,7 +52,35 @@ class DetailsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    /* Get Directions */
+    @IBAction func getDirections(_ sender: UIButton) {
+    }
 
+    
+    /* Favorite/Track a restuarant */
+    @IBAction func favorited(_ sender: UIButton) {
+//        if(facility.favorite == false){
+//            facility.favorite = true
+//            do{
+//                try facility.managedObjectContext?.save()
+//            } catch {
+//                let saveError = error as NSError
+//                print(saveError)
+//            }
+//            favoriteButton.setImage(UIImage(named: "Hearts-25"), for: UIControlState.normal)
+//        }
+//        else{
+//            facility.favorite = false
+//            do{
+//                try facility.managedObjectContext?.save()
+//            } catch {
+//                let saveError = error as NSError
+//                print(saveError)
+//            }
+//            favoriteButton.setImage(UIImage(named: "Hearts-25White"), for: UIControlState.normal)
+//        }
+    }
     /*
     // MARK: - Navigation
 

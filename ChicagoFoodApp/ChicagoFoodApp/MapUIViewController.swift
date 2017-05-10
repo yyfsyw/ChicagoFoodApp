@@ -21,6 +21,7 @@ class MapUIViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
     
     var facilityName: String = " "
     var facilityAddress: String = " "
+    var searchedFacility: [Facility] = []
     
     class customMKPointAnnotation: MKPointAnnotation {
         var image: UIImage? = UIImage()
@@ -118,9 +119,12 @@ class MapUIViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
     /* This is What Happens When The I is Pushed in the Annotation */
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         if control == view.rightCalloutAccessoryView {
-            //print("Disclosure Pressed! \(String(describing: view.annotation?.subtitle ?? " "))")
+            print("Disclosure Pressed! \(String(describing: view.annotation?.subtitle ?? " "))")
+            searchedFacility = facilities.filter({ (element) -> Bool in
+                return element.name == view.annotation!.title!!
+            })
+            
             facilityName = view.annotation!.title!!
-            facilityAddress = view.annotation!.subtitle!!
             self.performSegue(withIdentifier: "mapInfoSeg", sender: self)
         }
     }
@@ -182,9 +186,40 @@ class MapUIViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? DetailsViewController{
             
-            destination.facilityName = facilityName 
-            destination.facilityAddress = facilityAddress 
             
+            destination.facilityName = searchedFacility[0].name ?? ""
+            print("Searched Facility: ")
+            print(searchedFacility[0].name ?? "")
+            destination.facilityAddress = searchedFacility[0].address ?? ""
+            print("Searched address: ")
+            print(searchedFacility[0].address ?? "")
+            if let riskValue = facilities[0].risk {
+                if riskValue == 1 {
+                    destination.facilityRisk = "Risk 1 (High)"
+                }
+                else if riskValue == 2 {
+                    destination.facilityRisk = "Risk 2 (Medium)"
+                }
+                else if riskValue == 3 {
+                    destination.facilityRisk = "Risk 3 (Low)"
+                }
+                else{
+                    destination.facilityRisk = "Not applicable"
+                }
+            }
+            print("Searched risk: ")
+            print(searchedFacility[0].risk ?? "")
+            if let inspections = facilities[0].inspectionArray{
+                for inspection in inspections{
+                    if let violation = inspection.violation{
+                        destination.facilityViolations.append(violation)
+                    }
+                    
+                }
+                
+            }
+            destination.latitude = facilities[0].latitude
+            destination.longitude = facilities[0].longitude
         }
      }
  
