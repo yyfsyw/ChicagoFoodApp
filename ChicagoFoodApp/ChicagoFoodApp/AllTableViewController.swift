@@ -105,9 +105,40 @@ class AllTableViewController: UITableViewController {
            
             destination.facilityName = facilities[row].name ?? ""
             destination.facilityAddress = facilities[row].address ?? ""
-        
+            if let riskValue = facilities[row].risk {
+                if riskValue == 1 {
+                    destination.facilityRisk = "Risk 1 (High)"
+                }
+                else if riskValue == 2 {
+                    destination.facilityRisk = "Risk 2 (Medium)"
+                }
+                else if riskValue == 3 {
+                    destination.facilityRisk = "Risk 3 (Low)"
+                }
+                else{
+                    destination.facilityRisk = "Not applicable"
+                }
+                
+            }
 
-//            destination.name.text = facilities[row].name
+            if let inspections = facilities[row].inspectionArray{
+                for inspection in inspections{
+                    if let violation = inspection.violation{
+                        destination.facilityViolations.append(violation)
+                    }
+                
+                }
+             
+            }
+            destination.latitude = facilities[row].latitude
+            destination.longitude = facilities[row].longitude
+            
+
+            
+            
+            
+            
+            
            
         }
         
